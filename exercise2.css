@@ -1,0 +1,59 @@
+.logo {
+  background-color: #E632D7;
+  float: left;
+  width: 20%;
+  height: 3em;
+}
+
+.navigation {
+  background-color: #B11005;
+  float: left;
+  width: 70%;
+  height: 3em;
+}
+
+.topbar {
+  background-color: #E13516;
+  padding: 20px;
+}
+
+.topbar::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+.sidebar {
+  background-color: orange;
+  float: left;
+  width: 20%;
+  height: 12em;
+}
+
+.main {
+  background-color: blue;
+  float: left;
+  width: 80%;
+  height: 12em;
+}
+
+.main-body::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+.footer {
+  background-color: green;
+  height: 3em;
+}
+
+p {
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
