@@ -1,0 +1,65 @@
+.header {
+  background-color: orange;
+  height: 3em;
+}
+
+.main-body {
+  background-color: gray;
+  padding: 20px;
+}
+
+.main-body::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+.top-row::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+.widget {
+  background-color: #B13005;
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin: 10px;
+}
+
+.gadget {
+  background-color: #DC14B4;
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.sub-widget {
+  background-color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.blue {
+  background-color: #131796;
+}
+
+.footer {
+  background-color: green;
+  height: 3em;
+}
+
+p {
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
