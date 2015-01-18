@@ -1,3 +1,10 @@
+/* the top bar containing the logo and
+navigation elements. break after this top area */
+.topbar {
+  background-color: #E13516;
+  padding: 20px;
+}
+
 .logo {
   background-color: #E632D7;
   float: left;
@@ -12,11 +19,6 @@
   height: 3em;
 }
 
-.topbar {
-  background-color: #E13516;
-  padding: 20px;
-}
-
 .topbar::after {
   content: "";
   display: block;
@@ -25,6 +27,7 @@
   height: 0;
 }
 
+/* the main-body containing the sidebar and content */
 .sidebar {
   background-color: orange;
   float: left;
@@ -52,6 +55,9 @@
   height: 3em;
 }
 
+/* got rid of margins that were throwing
+off the seams around the divs and added a
+little padding */
 p {
   color: white;
   margin: 0;
