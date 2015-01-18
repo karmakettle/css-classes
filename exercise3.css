@@ -3,11 +3,14 @@
   height: 3em;
 }
 
+/* A container with two rows of widgets/gadgets */
 .main-body {
   background-color: gray;
   padding: 20px;
 }
 
+/* Creating a break after both the
+main body and the top row */
 .main-body::after {
   content: "";
   display: block;
@@ -24,6 +27,11 @@
   height: 0;
 }
 
+/* All widgets and gadgets have the nearly the same
+style. The main difference is that gadgets have a
+border-radius for rounded edges. I'm keeping their classes
+separate so they can be easily restyled later since they're
+ultimately separate concepts */
 .widget {
   background-color: #B13005;
   width: 120px;
@@ -41,6 +49,8 @@
   border-radius: 10px;
 }
 
+/* Chose not to make this an ID because
+it isn't necessarily a unique element */
 .sub-widget {
   background-color: white;
   width: 70%;
@@ -49,7 +59,24 @@
   padding: 5px;
 }
 
-.blue {
+/* Chose to have both .gadget.blue and .widget.blue
+chains instead of a single .blue {} selector because
+the increased specificity allows these instructions
+to be placed anywhere in the document. Otherwise,
+if the single .blue selector comes before the .widget
+and .gadget selectors, it will be overriden. This
+arrangement makes the code a little less breakable in
+exchange for a little bloat. I could have also chosen
+to make a separate .gadget-blue class to avoid naming
+a selector based on a CSS property, but if I wanted to
+change the color with JS later, it would be easier to
+add and remove the class 'blue' rather than have detailed
+JS instructions for every possible color combo */
+.gadget.blue {
+  background-color: #131796;
+}
+
+.widget.blue {
   background-color: #131796;
 }
 
@@ -58,6 +85,9 @@
   height: 3em;
 }
 
+/* Got rid of the margins around p that threw off
+the seams of the divs and added a little padding to
+move the text off the edge */
 p {
   color: white;
   margin: 0;
