@@ -10,6 +10,9 @@
   background-color: #11761D;
 }
 
+/* the main-body, including the sidebar
+and the main content. break after this
+section */
 .sidebar {
   float: left;
   width: 30%;
@@ -32,6 +35,9 @@
   visibility: hidden;
 }
 
+/* removed the margins that were throwing
+off the seams around the divs and added a
+little padding to move the text off the edge */
 p {
   padding: 10px;
   margin: 0;
