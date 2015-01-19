@@ -1,0 +1,7 @@
+1. the dog images are hidden with $('.dog').hide();
+2. the dog button is hidden with $('#dog').hide();
+3. all images are hidden with $('.animal').hide();
+4. all images are shown with $('.animal').show();
+5. the color of the buttons are changed with $('.filter-button').css('background', 'red');
+6. $('.animal').removeClass('dog'); this erases the 'dog' class from the html of any element that is of the class 'animal'. this doesn't remove the images of the dogs. it just causes the dogs button to lose its functionality because the JS can no longer locate the 'dog' class in the html in order to show/hide the elements.
+7. so, if $('.dog').hide() is run, then it won't work per the explanation above--the JS can no longer find the right class to show/hide. i found this out by trying to toggle the buttons, seeing the result, and reasoning about the answer.
